@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil</title>
+        <meta charset="UTF-8" />
+        <link href="mfranjic21.css" rel="stylesheet" type="text/css" />
+        <script src="/js/profil.js"></script>
+    </head>
+    <body>
+        <header>Profil</header>
+        <nav>#navigacija#</nav>
+        <main>
+            <form action="/azurirajKorisnika" method="POST">
+                <label for="lozinka">Lozinka</label>
+                <input type="password" name="lozinka" id="lozinka" />
+                <br />
+                <label for="ime">Ime</label>
+                <input type="text" name="ime" id="ime" />
+                <br />
+                <label for="prezime">Prezime</label>
+                <input type="text" name="prezime" id="prezime" />
+                <br />
+                <label for="adresa">Adresa</label>
+                <input type="text" name="adresa" id="adresa" />
+                <br />
+                <label for="mobitel">Mobitel</label>
+                <input type="text" name="mobitel" id="mobitel" />
+                <br />
+                <label for="datum_rođenja">Datum rođenja</label>
+                <input type="date" name="datum_rođenja" id="datum_rođenja" />
+                <br />
+                <input type="submit" value="Ažuriraj" />
+            </form>
+            <div id="profil_podaci"></div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

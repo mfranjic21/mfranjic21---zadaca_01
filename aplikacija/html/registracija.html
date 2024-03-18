@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Početna</title>
+        <meta charset="UTF-8" />
+        <link href="mfranjic21.css" rel="stylesheet" type="text/css" />
+        <script src="/js/registracija.js"></script>
+    </head>
+
+    <body>
+        <header>Početna</header>
+        <nav>#navigacija#</nav>
+        <main>
+            <div id="poruka">#poruka#</div>
+            <form action="/registracija" method="POST">
+                <label for="korime">Korisničko ime</label>
+                <input type="text" name="korime" id="korime" />
+                <br />
+                <label for="email">email</label>
+                <input type="mail" name="email" id="email" />
+                <br />
+                <label for="lozinka">Lozinka</label>
+                <input type="password" name="lozinka" id="lozinka" />
+                <br />
+                <label for="ime">Ime</label>
+                <input type="text" name="ime" id="ime" />
+                <br />
+                <label for="prezime">Prezime</label>
+                <input type="text" name="prezime" id="prezime" />
+                <br />
+                <label for="adresa">Adresa</label>
+                <input type="text" name="adresa" id="adresa" />
+                <br />
+                <label for="mobitel">Mobitel</label>
+                <input type="text" name="mobitel" id="mobitel" />
+                <br />
+                <label for="datum_rodenja">Datum rođenja</label>
+                <input type="date" name="datum_rodenja" id="datum_rodenja" />
+                <br />
+                <label for="tip_korisnika_id">Tip korisnika</label>
+                <select name="tip_korisnika_id" id="tip_korisnika_id">
+                    <option value="1">Admin</option>
+                    <option value="2" selected>Korisnik</option>
+                </select>
+                <br />
+                <input type="submit" value="Registriraj" />
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
